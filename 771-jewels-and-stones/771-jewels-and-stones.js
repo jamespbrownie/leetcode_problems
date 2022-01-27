@@ -4,9 +4,7 @@
  * @return {number}
  */
 var numJewelsInStones = function(jewels, stones) {
-    let myObj = {}
     let answer = 0
-    
     for (let char of stones) {
         if(jewels.includes(char)) {
             answer++

@@ -4,7 +4,11 @@
  * @return {number}
  */
 var searchInsert = function(nums, target) {
-    let answer = 0
+    
+    if (target > nums[nums.length -1]) {
+        return answer = nums.length
+    }
+    
 
     for (let i = 0; i < nums.length; i++) {
         console.log(nums[i])
@@ -13,8 +17,6 @@ var searchInsert = function(nums, target) {
         }
         
     }
-    if (answer == 0) {
-        return answer = nums.length
-    }
+    
     return answer
 };
